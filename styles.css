@@ -29,6 +29,11 @@ form input, form button {
     border: none;
     background: #1F2123;
     color: white;
+    
+}
+
+form input {
+    border: 0.5px solid #27292B;
 }
 
 input::placeholder {
@@ -36,15 +41,18 @@ input::placeholder {
     position: absolute;
     top: 35%;
     left: 20px;  
+    
 
 }
-
 
 form button {
     color: white;
     background: #1F2123;
     cursor: pointer;
     transition: all 0.3s ease;
+    display: grid;
+    place-content: center;
+    margin-right: 20px;
 }
 
 form button:hover {
@@ -93,11 +101,6 @@ form button:hover {
     cursor: pointer;
     font-size: 1rem;
 }
-
-/* .complete-btn {
-    background: #27292B; 
-} */
-
 
 .todo-item { 
     padding-bottom: 6px;
@@ -148,100 +151,11 @@ button.checked-box + li {
     opacity: 0;
 }
 
-/* translateY(8rem) rotateZ(20deg) */
-
-/* FOOTER */
-.footer svg {
-    margin: 20px;
-}
-
-.footer {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-
-.footer svg {
-    filter: invert(67%) sepia(8%) saturate(0%) hue-rotate(269deg) brightness(93%) contrast(93%);
-}
-
-svg.active-svg {
-    filter: invert(54%) sepia(21%) saturate(6201%) hue-rotate(85deg) brightness(119%) contrast(97%);
-}
-
-.dot {
-    height: 9px;
-    width: 9px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    margin-top: 10px;
-  }
-
-  a.active-svg {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-
-/* FAQ */
-
-.faq-container {
-margin: auto;
-width: 80%;
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-
-.faq-panel {
-    display: none;
-    width: 60%;
-    text-align: center;
-    padding-bottom: 20px;
-    margin: auto;
-  }
-
-  .faq-btn {
-    padding: 30px;
-    width: 60%;
-  }
-
-.faq-btn::after {
-    content: url("data:image/svg+xml,%3Csvg width='16' height='10' viewBox='0 0 16 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.12891 1.06982L8.12891 8.06982L15.1289 1.06982' stroke='white' stroke-width='2'/%3E%3C/svg%3E");
-    position: absolute;
-    left: 50px;
-  }
-
-
-.faq-btn.active::after {
-    content: url("data:image/svg+xml,%3Csvg width='16' height='10' viewBox='0 0 16 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.12891 1.06982L8.12891 8.06982L15.1289 1.06982' stroke='white' stroke-width='2'/%3E%3C/svg%3E");
-    position: absolute;
-    left: 50px;
-    transform: rotate(180deg);
-  }
-
-  h2 {
-    margin-bottom: 50px;
-  }
-
-  /* MAIN STRUCTURE */
-
-  .inner-wrap {
-    position: absolute;
-    display: none;
-}
-
-.show {
-    display: block;
-}
-
-.home-container {
-    display: block;
+@media only screen and (min-width: 600px) {
+    
+    .todo-container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
 }

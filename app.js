@@ -23,14 +23,7 @@ function addTodo(event) {
     //check mark button
     const todoButton = document.createElement("button");
     todoButton.classList.add("unchecked-box");
-    //     todoButton.innerHTML= `<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
-    //     <g id="Checkbox_inactive" data-name="Checkbox inactive" fill="none" stroke="#e0afff" stroke-width="1">
-    //       <rect width="23" height="23" rx="4" stroke="none"/>
-    //       <rect x="0.5" y="0.5" width="22" height="22" rx="3.5" fill="none"/>
-    //     </g>
-    //   </svg>
-    //   `;
-    //   todoButton.classList.add('complete-btn')
+   
     todoDiv.insertBefore(todoButton, todoDiv.children[0]);
   
     //check trash button
@@ -56,7 +49,7 @@ function addTodo(event) {
     //delete to do
     if (item.classList[0] === "trash-btn") {
       const todo = item.parentElement;
-      //annimaytion
+      //animation
       todo.classList.add("fall");
       todo.addEventListener("transitionend", function () {
         todo.remove();
@@ -67,8 +60,6 @@ function addTodo(event) {
       item.classList.remove("unchecked-box");
       item.classList.toggle("checked-box");
       const todo = item.parentElement;
-  
-      todoCont.appendChild(todo);
     }
   }
   
