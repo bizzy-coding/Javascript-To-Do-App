@@ -1,6 +1,7 @@
 const todoInput = document.querySelector(".todo-input");
 const todoButton = document.querySelector(".todo-button");
 const todoList = document.querySelector(".todo-list");
+const todoCont = document.querySelector(".todo-complete");
 
 //event listeners
 
@@ -11,7 +12,6 @@ todoList.addEventListener("click", deleteCheck);
 
 function addTodo(event) {
     event.preventDefault();
-    console.log("hello");
     //todo div
     const todoDiv = document.createElement("div");
     todoDiv.classList.add("todo");
@@ -23,9 +23,7 @@ function addTodo(event) {
     //check mark button
     const todoButton = document.createElement("button");
     todoButton.classList.add("unchecked-box");
-   
     todoDiv.insertBefore(todoButton, todoDiv.children[0]);
-  
     //check trash button
     const trashButton = document.createElement("button");
     trashButton.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="13.81" height="13.81" viewBox="0 0 13.81 13.81">
@@ -34,12 +32,9 @@ function addTodo(event) {
     `;
     trashButton.classList.add("trash-btn");
     todoDiv.appendChild(trashButton);
-  
     //append to list
     todoList.appendChild(todoDiv);
-  
     //clear todo input value
-  
     todoInput.value = "";
   }
   
@@ -57,9 +52,10 @@ function addTodo(event) {
     }
     // check mark
     if (item.classList[0] === "unchecked-box") {
-      item.classList.remove("unchecked-box");
-      item.classList.toggle("checked-box");
-      const todo = item.parentElement;
+            item.classList.remove("unchecked-box");
+            item.classList.toggle("checked-box");
+            const todo = item.parentElement;
+            todoCont.appendChild(todo);
     }
   }
   
