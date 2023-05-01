@@ -1,13 +1,15 @@
 # Javascript To Do App
 
-👀 [LIVE PREVIEW](https://bizzy-coding.github.io/Javascript-To-Do-App/) 
+A basic vanilla javascript to do app
 
-Basic functionality
+👀 [LIVE PREVIEW](https://bizzy-coding.github.io/Javascript-To-Do-App/) via github pages
+
+Basic functionality includes:
 - Add new to do
 - Mark as done
 - Delete to do
 
-A basic vanilla javascript to do app
+
 
 ## Description
 
@@ -17,8 +19,7 @@ Adapted the functionality from the web dev ed tutorial, and restyled with a mini
 
 I'm a self-taught front end developer with one years commercial experience. 
 
-Bizz AKA Bizzy Coding 
-[![instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/bizzy_coding/)
+Bizz AKA [Bizzy Coding](https://www.instagram.com/bizzy_coding/) 
 
 ## 🔗 Connect with me!
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://bizzy-coding.github.io/Junior_Dev/)
